@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Ads from X",
+  "version": "1.0.0",
+  "description": "Remove sponsored tweets from X",
+  "icons": {
+    "128": "./images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://twitter.com/*"
+      ]
+    }
+  ]
+}
